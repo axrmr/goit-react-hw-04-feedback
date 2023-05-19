@@ -1,5 +1,5 @@
 const Notification = ({ message }) => {
-  return <div>{message}</div>;
+  return <div style={{ textAlign: 'center' }}>{message}</div>;
 };
 
 export default Notification;
