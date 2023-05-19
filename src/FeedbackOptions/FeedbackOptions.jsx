@@ -1,15 +1,15 @@
-const FeedbackOptions = ({ onClick }) => {
-  const type = {
-    good: 'good',
-    neutral: 'neutral',
-    bad: 'bad',
-  };
+const FEEDBACK_TYPES = {
+  good: 'good',
+  neutral: 'neutral',
+  bad: 'bad',
+};
 
+const FeedbackOptions = ({ onClick }) => {
   return (
     <div>
-      <button onClick={() => onClick(type.good)}>Good</button>
-      <button onClick={() => onClick(type.neutral)}>Neutral</button>
-      <button onClick={() => onClick(type.bad)}>Bad</button>
+      <button onClick={() => onClick(FEEDBACK_TYPES.good)}>Good</button>
+      <button onClick={() => onClick(FEEDBACK_TYPES.neutral)}>Neutral</button>
+      <button onClick={() => onClick(FEEDBACK_TYPES.bad)}>Bad</button>
     </div>
   );
 };
