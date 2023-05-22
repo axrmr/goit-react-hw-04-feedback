@@ -1,9 +1,9 @@
+import FeedbackOptions from 'components/FeedbackOptions/FeedbackOptions';
+import ReactLogo from 'components/ReactLogo/ReactLogo';
+import Section from 'components/Section/Section';
+import Statistics from 'components/Statistics/Statistics';
 import { useState } from 'react';
 import './App.css';
-import FeedbackOptions from './FeedbackOptions/FeedbackOptions';
-import ReactLogo from './ReactLogo/ReactLogo';
-import Section from './Section/Section';
-import Statistics from './Statistics/Statistics';
 
 const App = () => {
     const [feedbackOption, setFeedbackOption] = useState({
